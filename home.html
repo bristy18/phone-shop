@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,800;1,400;1,600;1,900&display=swap" rel="stylesheet">
+<style>
+    .fira-sans-condensed-regular {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-condensed-medium {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-sans-condensed-extrabold {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-condensed-regular-italic {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-condensed-semibold-italic {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-condensed-black-italic {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+</style>
+</head>
+<body>
+    <div class="nav px-4 fira-sans-condensed-black-italic">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+              </div>
+              <a class="btn btn-ghost text-4xl">Phone Shop</a>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-cyan-500">Sign Up</a>
+            </div>
+          </div>
+    </div>
+    <div class="bg-indigo-100 p-8 min-w-10 space-y-10 flex flex-col items-center">
+        <h1 class="text-8xl fira-sans-condensed-semibold-italic">Apple Iphone 13 Pro Max</h1>
+        <p class="text-sm fira-sans-condensed-regular">There are many variations of passages of lorem ipsum available , but the majority have suffered alteration in same form, by injected humou.</p>
+        <a class="btn bg-cyan-500">Buy Now</a>
+        <img class="w-1/2" src="images/banner3.jpg" alt="">
+    </div>
+    <div class="my-8 space-y-4 min-w-full flex flex-col items-center">
+        <p>Search your phone</p>
+        <div class="form-control flex flex-row border rounded-xl">
+            <input id="search" type="text" placeholder="Search" class="input w-96" />
+            <a onclick="searchFunction()" class="btn bg-cyan-500">Search</a>
+          </div>
+    </div>
+    <div id="container" class="mx-16 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2">
+    </div>
+    <div id="showAll" class="hidden">
+<button class="btn btn-accent">Show All</button>
+    </div>
+    <div>
+        <!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_3" class="modal">
+    
+</dialog>
+    </div>
+
+
+</body>
+<script src="phone.js"></script>
+</html>
